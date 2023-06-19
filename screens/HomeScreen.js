@@ -2,6 +2,7 @@ import React, {useCallback, useEffect, useState} from 'react';
 import {View, Text, StyleSheet, SafeAreaView, Platform, Image, ScrollView, ListView, FlatList} from 'react-native';
 import SearchBar from "../components/SearchBar";
 import HomeScreenIcon from "../components/HomeScreenIcon";
+//import Recommendation from "../components/Recommendation";
 //import SearchBar from 'react-native-elements';
 
 
@@ -23,13 +24,15 @@ const HomeScreen = ({navigation}) => {
                         clicked={clicked}
                         setClicked={setClicked}/>
                 </SafeAreaView>
-                <View>
+                <SafeAreaView>
                     <Image
                         source={require('../assets/discount.png')}
                     />
-                </View>
+
+                </SafeAreaView>
+                <HomeScreenIcon />
                 <SafeAreaView>
-                    <HomeScreenIcon />
+
                 </SafeAreaView>
 
             </View>
